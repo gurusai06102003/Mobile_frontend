@@ -7,7 +7,7 @@ const MobileDetails = () => {
   const [mobile, setMobile] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/mobiles/${id}`)
+    fetch(`https://mobile-backend-vz63.onrender.com/mobiles/${id}`)
       .then((res) => res.json())
       .then((data) => setMobile(data))
       .catch((error) => console.error("Error fetching mobile details:", error));

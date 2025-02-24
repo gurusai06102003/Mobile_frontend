@@ -10,7 +10,7 @@ const MobileList = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/mobiles/get")
+      .get("https://mobile-backend-vz63.onrender.com/api/mobiles/get")
       .then((response) => {
         // console.log("API Response:", response.data); // Debugging Log
         // const mobiles = response.data;

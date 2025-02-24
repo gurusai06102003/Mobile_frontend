@@ -12,7 +12,7 @@ const Compare = () => {
   // Fetch all available brands
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/mobiles/getModelNames")
+      .get("https://mobile-backend-vz63.onrender.com/api/mobiles/getModelNames")
       .then((response) => setBrands(response.data || []))
       .catch((error) => console.error("Error fetching brands:", error));
   }, []);
@@ -21,7 +21,7 @@ const Compare = () => {
   useEffect(() => {
     if (selectedBrand) {
       axios
-        .get(`http://localhost:5000/api/mobiles/getModelNames/${selectedBrand}`)
+        .get(`https://mobile-backend-vz63.onrender.com/api/mobiles/getModelNames/${selectedBrand}`)
         .then((response) => setModels(response.data || []))
         .catch((error) => console.error("Error fetching models:", error));
     }
@@ -32,7 +32,7 @@ const Compare = () => {
     if (!selectedModel) return;
 
     axios
-      .get(`http://localhost:5000/api/mobiles/getMobileDetails/${selectedModel}`)
+      .get(`https://mobile-backend-vz63.onrender.com/api/mobiles/getMobileDetails/${selectedModel}`)
       .then((response) => {
         const mobileToAdd = response.data;
 
