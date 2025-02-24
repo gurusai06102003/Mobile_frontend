@@ -1,0 +1,12 @@
+.mobile-list {
+    /* text-align: center; */
+    padding: 20px;
+  }
+  
+  .mobile-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  

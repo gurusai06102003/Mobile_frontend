@@ -1,0 +1,58 @@
+.compare-container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.compare-selectors {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.compare-selectors select, .compare-selectors button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.compare-table {
+  overflow-x: auto;
+}
+
+.compare-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.compare-table th, .compare-table td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+
+.compare-table img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.mobile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-header button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-header button:hover {
+  background: darkred;
+}

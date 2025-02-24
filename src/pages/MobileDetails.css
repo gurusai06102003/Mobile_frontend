@@ -1,0 +1,61 @@
+/* MobileDetails.css */
+
+.mobile-details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.mobile-details-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.mobile-image {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.mobile-info {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+.specs-list {
+    list-style: none;
+    padding: 0;
+}
+
+.specs-list li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.buy-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
