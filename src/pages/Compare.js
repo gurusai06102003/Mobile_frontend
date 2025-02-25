@@ -34,7 +34,7 @@ const Compare = () => {
     axios
       .get(`https://mobile-backend-vz63.onrender.com/api/mobiles/getMobileDetails/${selectedModel}`)
       .then((response) => {
-        const mobileToAdd = response.data;
+        const mobileToAdd = response.data[0];
 
         if (mobileToAdd) {
           setCompareList((prevList) => {
